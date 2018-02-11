@@ -28,6 +28,14 @@ public class PlayerSetup : NetworkBehaviour {
 			}
 
 		}
+
+		RegisterPlayer();
+	}
+
+	void RegisterPlayer()
+	{
+		string _id = "Player " + GetComponent<NetworkIdentity>().netId;
+		transform.name = _id;
 	}
 
 	void AssignRemoteLayer()
