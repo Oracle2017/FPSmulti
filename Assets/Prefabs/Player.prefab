@@ -63,9 +63,10 @@ GameObject:
   - component: {fileID: 114420830040900460}
   - component: {fileID: 114239798392762494}
   - component: {fileID: 153068636721170056}
+  - component: {fileID: 114955716302479392}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -533,6 +534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5f545203bb4441cd8c9bd04ef179854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraRotationLimit: 85
 --- !u!114 &114239798392762494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -638,6 +640,25 @@ MonoBehaviour:
   jointMode: 1
   jointSpring: 15
   jointMaxForce: 40
+--- !u!114 &114955716302479392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1202627513136148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4c0c6dc4a9a45f7aac2bcf1037f7b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon:
+    name: Glock
+    damage: 10
+    range: 100
+  cam: {fileID: 20217301199699084}
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!124 &124435822675880732
 Behaviour:
   m_ObjectHideFlags: 1
